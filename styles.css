@@ -1,0 +1,253 @@
+:root {
+  --bg: #f5efe4;
+  --surface: rgba(255, 252, 245, 0.82);
+  --surface-strong: #fffaf1;
+  --ink: #1f2a30;
+  --muted: #617077;
+  --teal: #2f6b74;
+  --gold: #c68a42;
+  --brick: #9c5f4b;
+  --line: rgba(31, 42, 48, 0.12);
+  --shadow: 0 30px 60px rgba(31, 42, 48, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(198, 138, 66, 0.22), transparent 28rem),
+    radial-gradient(circle at right center, rgba(47, 107, 116, 0.18), transparent 24rem),
+    linear-gradient(180deg, #f9f2e7 0%, var(--bg) 55%, #efe7db 100%);
+  overflow-x: hidden;
+}
+
+main {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 4rem 0 5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.orb {
+  position: fixed;
+  border-radius: 999px;
+  filter: blur(28px);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.orb-a {
+  width: 18rem;
+  height: 18rem;
+  top: -5rem;
+  right: -4rem;
+  background: rgba(47, 107, 116, 0.18);
+}
+
+.orb-b {
+  width: 16rem;
+  height: 16rem;
+  left: -5rem;
+  bottom: 8rem;
+  background: rgba(156, 95, 75, 0.14);
+}
+
+.hero {
+  padding: 4.5rem 0 3rem;
+}
+
+.eyebrow,
+.panel-label,
+.timeline-step span {
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  margin: 0;
+  line-height: 1.05;
+}
+
+h1 {
+  max-width: 14ch;
+  font-size: clamp(3rem, 7vw, 5.8rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+.lede,
+.panel p,
+.timeline-step p,
+li {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.lede {
+  max-width: 48rem;
+  margin: 1.35rem 0 0;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.9rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 1.35rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(31, 42, 48, 0.12);
+}
+
+.button-primary {
+  background: var(--ink);
+  color: #fffaf1;
+}
+
+.button-secondary {
+  background: rgba(255, 250, 241, 0.72);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.panel {
+  padding: 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+}
+
+.feature {
+  background:
+    linear-gradient(145deg, rgba(255, 250, 241, 0.92), rgba(221, 236, 238, 0.7)),
+    var(--surface);
+}
+
+.roadmap {
+  margin-top: 3.5rem;
+}
+
+.section-heading {
+  margin-bottom: 1.4rem;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.timeline-step {
+  padding: 1.35rem;
+  border-radius: 1.25rem;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.funding {
+  margin-top: 3.5rem;
+}
+
+.rate-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.rate-item {
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 241, 0.72);
+}
+
+.rate-item strong,
+.rate-item span,
+.rate-item small {
+  display: block;
+}
+
+.rate-item strong {
+  margin-bottom: 0.35rem;
+  font-size: 1rem;
+}
+
+.rate-item span {
+  color: var(--ink);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.rate-item small {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+ul {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .grid,
+  .timeline,
+  .rate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 2.5rem;
+  }
+}

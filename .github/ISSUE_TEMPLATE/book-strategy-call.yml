@@ -1,0 +1,39 @@
+name: Book Strategy Call
+description: Request a 60-minute paid strategy call
+title: "[Strategy Call] "
+labels:
+  - lead
+  - strategy-call
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request the 60-minute `$850` strategy call.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: Your name
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Organization
+      placeholder: Company, lab, or team name
+    validations:
+      required: true
+  - type: textarea
+    id: product
+    attributes:
+      label: What are you building?
+      placeholder: Briefly describe your robotics, embodied AI, or autonomy project.
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: What do you want from the call?
+      placeholder: Example: product wedge, roadmap, safety architecture, fundraising story
+    validations:
+      required: true

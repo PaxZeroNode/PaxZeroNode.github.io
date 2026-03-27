@@ -1,0 +1,30 @@
+name: Buy Starter Kit
+description: Request access to the Embodied AI Funding Starter Kit
+title: "[Starter Kit] "
+labels:
+  - lead
+  - digital-product
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form if you want the digital toolkit for robotics and embodied AI fundraising.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Organization
+    validations:
+      required: false
+  - type: textarea
+    id: use-case
+    attributes:
+      label: How will you use the kit?
+      placeholder: Accelerator applications, grant prep, investor narrative, etc.
+    validations:
+      required: true

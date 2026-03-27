@@ -1,0 +1,47 @@
+name: Request Advisory Sprint
+description: Request a fixed-scope advisory sprint
+title: "[Advisory Sprint] "
+labels:
+  - lead
+  - sprint
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request one of the fixed-scope Pax Genesis advisory offers.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Organization
+    validations:
+      required: true
+  - type: dropdown
+    id: offer
+    attributes:
+      label: Which offer?
+      options:
+        - Embodied AI Strategy Sprint ($3,500)
+        - Robotics Safety and Autonomy Review ($7,500)
+        - Deep-Tech Funding Readiness Sprint ($2,500)
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Project context
+      placeholder: Current stage, product, team, and why this sprint is useful now
+    validations:
+      required: true
+  - type: textarea
+    id: timeline
+    attributes:
+      label: Timeline
+      placeholder: What deadline or milestone are you working toward?
+    validations:
+      required: true
