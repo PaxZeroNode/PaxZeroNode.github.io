@@ -1,0 +1,58 @@
+name: Request Benchmark Evaluation
+description: Request a fixed-scope benchmark and evaluation engagement
+title: "[Benchmark Evaluation] "
+labels:
+  - lead
+  - benchmark-evaluation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request a Pax Mutuara benchmark evaluation engagement.
+
+        This is for paid service work. If you want to support the project itself, use Crowdfunder: https://www.crowdfunder.com/p/pax-mutuara
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: Your name
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Organization
+      placeholder: Company, lab, or team
+    validations:
+      required: true
+  - type: dropdown
+    id: package
+    attributes:
+      label: Evaluation package
+      options:
+        - Starter ($1,750)
+        - Standard ($4,500)
+        - Deep ($8,500)
+    validations:
+      required: true
+  - type: textarea
+    id: target
+    attributes:
+      label: What should be evaluated?
+      placeholder: Model, system, workflow, or deployment path
+    validations:
+      required: true
+  - type: textarea
+    id: benchmark_goal
+    attributes:
+      label: What decision should this evaluation support?
+      placeholder: Selection, risk review, launch decision, comparison, pilot readiness
+    validations:
+      required: true
+  - type: textarea
+    id: timeline
+    attributes:
+      label: Timeline and deadline
+      placeholder: Any milestone, review date, or delivery target
+    validations:
+      required: true
