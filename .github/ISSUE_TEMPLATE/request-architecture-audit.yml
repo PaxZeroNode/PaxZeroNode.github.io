@@ -1,0 +1,58 @@
+name: Request Architecture Audit
+description: Request a fixed-scope architecture audit for an AI, robotics, or technical system
+title: "[Architecture Audit] "
+labels:
+  - lead
+  - architecture-audit
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request a fixed-scope Pax Mutuara architecture audit.
+
+        This is for paid service work, not project support. If you want to support the build itself, use Crowdfunder: https://www.crowdfunder.com/p/pax-mutuara
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: Your name
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Organization
+      placeholder: Company, lab, or team
+    validations:
+      required: true
+  - type: dropdown
+    id: package
+    attributes:
+      label: Audit package
+      options:
+        - Starter ($1,500)
+        - Standard ($4,000)
+        - Deep ($7,500)
+    validations:
+      required: true
+  - type: textarea
+    id: system
+    attributes:
+      label: What system or repo needs review?
+      placeholder: Describe the project, current stage, and what needs a review.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What do you want from the audit?
+      placeholder: Examples: roadmap, risk review, architecture gaps, implementation priorities
+    validations:
+      required: true
+  - type: textarea
+    id: timeline
+    attributes:
+      label: Timeline and deadline
+      placeholder: Any milestones, review dates, or delivery deadlines
+    validations:
+      required: true
