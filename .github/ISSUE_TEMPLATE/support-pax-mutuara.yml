@@ -1,0 +1,47 @@
+name: Support Pax Mutuara
+description: Tell us how you want to support the project or ask for campaign details
+title: "[Support] "
+labels:
+  - support
+  - crowdfunder
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form if you want to support Pax Mutuara or ask how support is used.
+
+        Primary support path: https://www.crowdfunder.com/p/pax-mutuara
+
+        Fallback direct-support handle: @paxmutuara
+  - type: input
+    id: name
+    attributes:
+      label: Name or handle
+      placeholder: Your name or public handle
+    validations:
+      required: true
+  - type: dropdown
+    id: support_type
+    attributes:
+      label: How do you want to support?
+      options:
+        - Donate on Crowdfunder
+        - Direct support via Venmo
+        - Help share the campaign
+        - Ask a question first
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: What part of the project are you supporting?
+      placeholder: Hardware, infrastructure, testing, long-term development, or general support
+    validations:
+      required: false
+  - type: textarea
+    id: note
+    attributes:
+      label: Note or question
+      placeholder: Any note, question, or request for clarification
+    validations:
+      required: false
