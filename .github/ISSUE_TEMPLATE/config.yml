@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Support Pax Mutuara on Crowdfunder
+    url: https://www.crowdfunder.com/p/pax-mutuara
+    about: Main public funding path for hardware, infrastructure, testing, and development.
   - name: Browse services
     url: https://paxzeronode.github.io/
-    about: View the public rate card and available service offers.
+    about: View the public support and service funnel.
